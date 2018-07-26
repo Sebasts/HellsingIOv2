@@ -1,16 +1,20 @@
 import { Injectable } from '@angular/core';
 import { Blog } from './blog';
+import { DataPathwayService } from './data-pathway.service';
 import { blogs } from './mock-blog';
+import { Observable, of } from 'rxjs';
 
 @Injectable({
     providedIn: 'root',
 })
 export class BlogService {
 
-  constructor() { }
+  constructor(private dataPathway: DataPathwayService) { }
   
-  getBlogs():Blog[]{
-      return blogs;
+  getBlogs():Observable<Blog[]>{
+      this.dataPathway.add("Fetched blog ddata");
+
+      return of(blogs) ;
   }
 
 }

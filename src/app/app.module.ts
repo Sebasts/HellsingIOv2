@@ -11,7 +11,7 @@ import { BlogSpotlightComponent } from './blog-spotlight/blog-spotlight.componen
   declarations: [
     AppComponent,
     BlogComponent,
-    BlogSpotlightComponent
+    BlogSpotlightComponent,
   ],
   imports: [
     BrowserModule,
