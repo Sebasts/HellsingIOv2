@@ -1,0 +1,8 @@
+	<h2>My Blogs</h2>
+
+	<ul class="blogs">
+		<li *ngFor="let blog of blogs"  [class.selected]="blog === activeBlog" (click)="activateBlog(blog)"><span
+			class='blogDisplay'></span>{{blog.title}}</li>
+	</ul>
+
+<app-blog-spotlight [blog]="activeBlog"></app-blog-spotlight>
