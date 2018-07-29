@@ -28,4 +28,8 @@ export class BlogSpotlightComponent implements OnInit {
         const id = +this.route.snapshot.paramMap.get(this.blogIdParam);
         this.blogService.getBlog(id).subscribe(blog => this.blog = blog);
     }
+    
+    goBack(): void {
+        this.location.back();
+      }
 }

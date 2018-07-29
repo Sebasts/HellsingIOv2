@@ -3,8 +3,7 @@
 
 <ul class="blogs">
 	<li *ngFor="let blog of blogs">
-	<a
-		routerLink="/blog-spotlght/11"> <span class='blogDisplay'>
+	<a routerLink="/blog-spotlight/{{blog.id}}"> <span class='blogDisplay'>
 				{{blog.id}} </span>
 	</a>{{blog.title}}</li>
 </ul>

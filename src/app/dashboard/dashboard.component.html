@@ -2,7 +2,7 @@
 
 <div class='grid grid-pad'>
 	<a *ngFor="let blog of blogs" class="col-1-4"
-	routerLink="/detail/blog.id">
+	routerLink="/blog-spotlight/{{blog.id}}">
 		<div class="module blog">
 			<h4>{{blog.title}}</h4>
 		</div>
