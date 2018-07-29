@@ -1,9 +1,11 @@
-	<h2>My Blogs</h2>
 
-	<ul class="blogs">
-		<li *ngFor="let blog of blogs"  [class.selected]="blog === activeBlog" (click)="activateBlog(blog)"><span
-			class='blogDisplay'></span>{{blog.title}}</li>
-	</ul>
+<h2>My Blogs</h2>
 
-<app-blog-spotlight [blog]="activeBlog"></app-blog-spotlight>
-<app-data-pathway></app-data-pathway>
+<ul class="blogs">
+	<li *ngFor="let blog of blogs">
+	<a
+		routerLink="/blog-spotlght/11"> <span class='blogDisplay'>
+				{{blog.id}} </span>
+	</a>{{blog.title}}</li>
+</ul>
+

@@ -1,9 +1,9 @@
-<div *ngIf"dataPathway.messages.length">
+<div *ngIf="dataPathway.sharedData.length">
 
 
 <h2>Data</h2>
 <button class="clear" (click)="dataPathway.clear()">clear</button>
-<div *ngFor="let dataPack of dataPathway.messages">{{dataPack}}</div>
+<div *ngFor="let dataPack of dataPathway.sharedData">{{dataPack}}</div>
 
 
 

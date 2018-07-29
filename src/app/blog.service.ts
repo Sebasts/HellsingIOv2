@@ -16,5 +16,11 @@ export class BlogService {
 
       return of(blogs) ;
   }
+  
+  getBlog(id: number): Observable<Blog>{
+      this.dataPathway.add('Fetched blog with id : ${id}');
+      
+      return of(blogs.find(blog => blog.id === id));
+  }
 
 }
