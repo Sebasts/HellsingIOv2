@@ -14,17 +14,15 @@ import { MenuComponent } from './nav/menu/menu.component';
 import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
-    { path: 'blogs', component: BlogComponent },
     { path: 'dashboard', component: DashboardComponent},
     { path: 'blog-spotlight/:id', component: BlogSpotlightComponent},
     { path: 'contactus', component: ContactComponent },
     { path: 'home', component: HomeComponent,
         children: [
-                   { path: '', redirectTo: 'home/blog', pathMatch: 'full' },
-                   {path: 'home/blog', component: BlogComponent, outlet:'sub-home'},
+                   {path: '', redirectTo: 'blog', pathMatch: 'full'}, 
+                   {path: 'blog', component: BlogComponent},
                    ]
     },
-    { path: 'home', component: ProjectdisplayComponent },
     { path: 'projects', component: ProjectdisplayComponent },
     { path: 'slam', component: SlamDominoesComponent },
     { path: 'profile', component: ProfileComponent },
