@@ -1,19 +1,78 @@
-/* You can add global styles to this file, and also import other style files */
-h1{
-	color:#369;
-	font-familt: Arial Helvetica, sans-serif;
-	font-size:250%
-}
-h2, h3{
-	color: #444;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight:lighter;
-}
-body, input[text], button{
-	color:#888;
-	font-family: Cambria, Georgia;
+@import './app/assets/css/w3.css';
+@import './app/assets/css/blackPulseEffect.css';
+
+
+html {
+	height: 100%;
+	width: 100%;
 }
 
-*{
-	font-family:Arial, Helvetica, sans-serif;
+body{
+	min-height: 100%;
+	min-width: 100%;
+	/*background-color: #000;*/
+	overflow:scroll;
 }
+.appBox{
+	padding-top:100px;
+}
+
+/*Vanish css*/
+.vanish1{
+	opacity:.9;
+}
+.vanish2{
+	opacity:.8;
+}
+.vanish3{
+	opacity:.7;
+}
+.vanish4{
+	opacity:.6;
+}
+.vanish5{
+	opacity:.5;
+}
+.vanish6{
+	opacity:.4;
+}
+.vanish7{
+	opacity:.3;
+}
+.vanish8{
+	opacity:.2;
+}
+.vanish9{
+	opacity:.1;
+}
+.vanish10{
+	opacity:.09;
+}
+.vanish11{
+	opacity:.08;
+}
+.vanish12{
+	opacity:.07;
+}
+.vanish13{
+	opacity:.06;
+}
+.vanish14{
+	opacity:.05;
+}
+.vanish15{
+	opacity:.04;
+}
+.vanish16{
+	opacity:.03;
+}
+.vanish17{
+	opacity:.02;
+}
+.vanish18{
+	opacity:.01;
+}
+.vanish19{
+	opacity:.00;
+}
+/***********************************/

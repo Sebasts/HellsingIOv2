@@ -1,31 +1,37 @@
-<div class='homeContainer appBox'>
-	<h1 id='header home '>Welcome to Hellsing IO!</h1>
-	<div class='pulseArrow' id="homeArrow ">
-		<img src='assets/pic/downArrow.png'>
+<div class="row">
+	<div class='homeContainer appBox col-sm-12'>
+	<h1 id=' headerhome '>
+		Welcome to Hellsing IO!
+		</h1>
+		<div class='pulseArrow' id="homeArrow ">
+			<img src='assets/pic/downArrow.png'>
+		</div>
+		<div class='sideBar ' id='homeSideNav '>
+			<ul>
+				<li><a routerLink="blog" routerLinkActive="active"
+					title="Hellsing current events">H</a></li>
+				<span id="hFollow">Hellsing Current Events</span>
+				<li>Working Exhibit</li>
+				<li>Portkey</li>
+			</ul>
+		</div>
+		<router-outlet></router-outlet>
+		<div class='blogBody' id="SITREP">
+			<h3>Who are we?</h3>
+			<router-outlet name="sub-home"></router-outlet>
+			Sebastian and Jessica Hellsing are the curators of Hellsing IO! We
+			are sailors, fishermen, hikers, inventors, travelers, and coders!
+		</div>
+		<div class='blogBody' id="mainHomeDiv">
+			<h3>Who are we?</h3>
+			Sebastian and Jessica Hellsing are the curators of Hellsing IO! We
+			are sailors, fishermen, hikers, inventors, travelers, and coders!
+		</div>
+		<div class='blogBody' id="mainHomeDiv">
+			<h3>Who are we?</h3>
+			Sebastian and Jessica Hellsing are the curators of Hellsing IO! We
+			are sailors, fishermen, hikers, inventors, travelers, and coders!
+		</div>
+		<div #bottom></div>
 	</div>
-	<div class='sideBar ' id='homeSideNav '>
-		<ul>
-			<li><a routerLink="blog" routerLinkActive="active">STATREP</a></li>
-			<li>Working Exhibit</li>
-			<li>Portkey</li>
-		</ul>
-	</div>
-	<router-outlet></router-outlet>
-	<div class='blogBody' id="SITREP">
-		<h3>Who are we?</h3>
-		<router-outlet name="sub-home"></router-outlet>
-		Sebastian and Jessica Hellsing are the curators of Hellsing IO! We are
-		sailors, fishermen, hikers, inventors, travelers, and coders!
-	</div>
-	<div class='blogBody' id="mainHomeDiv">
-		<h3>Who are we?</h3>
-		Sebastian and Jessica Hellsing are the curators of Hellsing IO! We are
-		sailors, fishermen, hikers, inventors, travelers, and coders!
-	</div>
-	<div class='blogBody' id="mainHomeDiv">
-		<h3>Who are we?</h3>
-		Sebastian and Jessica Hellsing are the curators of Hellsing IO! We are
-		sailors, fishermen, hikers, inventors, travelers, and coders!
-	</div>
-	<div #bottom></div>
 </div>
