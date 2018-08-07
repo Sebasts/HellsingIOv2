@@ -15,26 +15,4 @@ export class NavComponent implements OnInit {
   ngOnInit() {
   }
 
-  public click() {
-    console.log("I am clicked!");
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-
-  @HostListener("window:scroll", [])
-  onWindowScroll() {
-      var x = document.getElementById("myTopnav");
-    if (window.scrollY > 10) {
-      if (x.className.endsWith("topnav ")) {
-        x.className += "scrolled";
-      }
-    }else{
-      x.className = "topnav ";
-    }
-  }
-
 }

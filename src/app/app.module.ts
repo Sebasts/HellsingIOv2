@@ -2,8 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService }  from './in-memory-data.service'; // <-- Make sure this matches the file name
 
 import { AppComponent } from './app.component';
 import { BlogComponent } from './blog/blog.component';
@@ -20,6 +18,9 @@ import { SlamDominoesComponent } from './slam-dominoes/slam-dominoes.component';
 import { MenuComponent } from './nav/menu/menu.component';
 import { ProfileComponent } from './profile/profile.component';
 import { MotivatorComponent } from './motivator/motivator.component';
+import { HttpClientXsrfModule } from "@angular/common/http";
+import { WeatherComponent } from './weather/weather.component';
+import { ClockComponent } from './clock/clock.component';
 
 
 @NgModule( {
@@ -38,15 +39,14 @@ import { MotivatorComponent } from './motivator/motivator.component';
         MenuComponent,
         ProfileComponent,
         MotivatorComponent,
+        WeatherComponent,
+        ClockComponent,
     ],
     imports: [
         BrowserModule,
         FormsModule,
         AppRoutingModule,
         HttpClientModule,
-        HttpClientInMemoryWebApiModule.forRoot(
-                InMemoryDataService, { dataEncapsulation: false }
-              )
     ],
     providers: [],
     bootstrap: [AppComponent]

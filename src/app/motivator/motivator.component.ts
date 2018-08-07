@@ -6,8 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./motivator.component.css']
 })
 export class MotivatorComponent implements OnInit {
-
-  constructor() { }
+  quote: string;
+   quotes: string[] = [
+                       ""
+       
+                       ];
+  constructor() {
+      
+  }
 
   ngOnInit() {
   }

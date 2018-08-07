@@ -1,70 +1,70 @@
 h1 {
-	margin-left: 41vw;
-	font-size: 14px;
-	height: 175px;
-	position: fixed;
-	text-align: center;
-	padding: 0;
+    /* margin: auto; */
+    height: 175px;
+    /* position: fixed; */
+    text-align: center;
+    padding: 0;
+    /* left: 40vw; */
+    margin-left: 6vw;
 }
-
-@media screen and (min-width: 768px) {
-	h1 {
-		margin-left: 41vw;
-		font-size: 36px;
-	}
+.homeContainer{
+	background-color: white;
 }
-
-@media screen and (min-width: 1024px) {
-	h1 {
-		margin-left: 43vw;
-		font-size: 42px;
-	}
-}
-
-@media screen and (min-width: 1440px) {
-	h1 {
-		margin-left: 44vw;
-		font-size: 57px;
-	}
-}
-
 .homeContainer .blogBody {
-	width: 100vw;
+	width: 68vw;
 	border-left: 0 solid black;
 	/*horizontal vertical blur radius spread radius color*/
 	box-shadow: -2px 17px 3px 3px #888888;
 	border-radius: 5px;
 	min-height: 90vh;
-	position: fixed;
+	margin-left:30vw;
+	position:fixed;
 }
-
+.welcomeMessage{
+    font-family: 'Courgette', 'sans-serif';
+    margin-left: 23vw;
+    margin-top: -6vh;
+    font-size: 25px;
+    font-weight: lighter;
+    width: 39vw;
+}
 .pulseArrow {
 	background: white;
 	z-index: 999;
-	top: 10%;
-	width: 100vw;
-	position: fixed;
+    margin-left: 38vw;
+    margin-top: 7vh;
+    width: 100vw;
+    /* position: fixed; */
 }
-
-.up {
+.mountainWindow{
+    border: 1px grey solid;
+    height: 550px;
+    /* margin-top: 0vh; */
+    /* position: fixed; */
+    /* display: block; */
+    width: 80vw;
+    box-shadow: inset 0px 1px 5px grey;
+    border-radius: 5px;
+   	background-image:url('/assets/pic/mountain.jpg');
+	background-attachment: fixed;
+    background-position: -8vw -30vh;}
+.up{
 	animation: slideToTop 1.5s 1, pulse 2s infinite;
-	top: -6%
+	top:-6%
 }
-
-.down {
+.down{
 	animation: slideToBottom 1.5s 1, pulse 2s infinite;
-	top: 10%
+	top:10%
 }
-
 .homeContainer .sideBar {
-	top: 0;
-	left: 0;
-	width: 32vw;
+	top:0;
+	left:0;
+	width:32vw;
 	height: 100vh;
-	position: relative;
+	position: fixed;
 	margin-right: 5%;
-	float: left;
-	border: 1px #72c8eb solid;
+	float:left;
+	opacity:0;
 }
 
 .sideBar ul {
@@ -90,99 +90,50 @@ img {
 }
 
 .blogBody {
-	opacity: 0;
-	top: 10vh;
+	opacity:0;
+	top:10vh;
 }
-
-#hFollow {
-	font-size: 7px;
-	margin-left: 9vw;
-	color: grey;
+#bottom{
+	position:fixed;
+	top:100vh;
 }
-
-#bottom {
-	position: fixed;
-	top: 100vh;
-}
-
-.fadeIn {
+.fadeIn{
 	animation: fadeIn 2s 1;
-	opacity: .9 !important;
+	opacity:.9 !important;
 }
-
-.fadeAway {
-	animation: fadeAway 4s 1;
-	opacity: .0 !important;
+.fadeAway{
+	animation: fadeAway 2s 1;
+	opacity:.0 !important;
 }
-
 @-webkit-keyframes slideToTop {
-	0% {
-		top: 10%;
-	}
-	100% {
-		top: -6%;
-	}
+  0%{ top:10%;}
+  100% {top: -6%;}
 }
-
 @keyframes slideToTop {
-	0% {
-		top: 10%;
-	}
-	100% {
-		top: -6%;
-	}
+  0%{top:10%;}
+  100% {top: -6%;}
 }
-
 @-webkit-keyframes slideToBottom {
-	0% {
-		top: -6%;
-	}
-	100% {
-		top: 10%;
-	}
+  0%{ top:-6%;}
+  100% {top: 10%;}
 }
-
 @keyframes slideToBottom {
-	0% {
-		top: -6%;
-	}
-	100% {
-		top: 10%;
-	}
+  0%{top:-6%;}
+  100% {top: 10%;}
 }
-
 @-webkit-keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  0%{ opacity:0;}
+  100% {opacity:1;}
 }
-
 @keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  0%{ opacity:0;}
+  100% {opacity:1;}
 }
-
 @-webkit-keyframes fadeAway {
-	0% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
+  0%{ opacity:1;}
+  100% {opacity:0;}
 }
-
 @keyframes fadeAway {
-	0% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
+  0%{ opacity:1;}
+  100% {opacity:0;}
 }

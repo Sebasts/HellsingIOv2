@@ -17,7 +17,7 @@ export class DashboardComponent implements OnInit {
   }
   
   getBlogs():void{
-      this.blogService.getBlogs().subscribe(blogs => this.blogs = blogs);
+ //     this.blogService.getBlogs().subscribe(blogs => this.blogs = blogs);
   }
 
 }

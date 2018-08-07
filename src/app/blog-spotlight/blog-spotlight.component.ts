@@ -22,11 +22,14 @@ export class BlogSpotlightComponent implements OnInit {
 
     ngOnInit() {
         this.getHero();
+        var pig = this.blogService.getBlogs().subscribe(function(pong){
+            console.log(pong);
+        });
     }
     
     getHero(){
         const id = +this.route.snapshot.paramMap.get(this.blogIdParam);
-        this.blogService.getBlog(id).subscribe(blog => this.blog = blog);
+ //       this.blogService.getBlog(id).subscribe(blog => this.blog = blog);
     }
     
     goBack(): void {

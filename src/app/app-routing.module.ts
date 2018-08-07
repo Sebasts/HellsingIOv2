@@ -21,6 +21,7 @@ const routes: Routes = [
         children: [
                    {path: '', redirectTo: 'blog', pathMatch: 'full'}, 
                    {path: 'blog', component: BlogComponent},
+                   {path: 'blog-spotlight', component: BlogSpotlightComponent}
                    ]
     },
     { path: 'projects', component: ProjectdisplayComponent },

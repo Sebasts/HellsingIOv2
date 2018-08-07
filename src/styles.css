@@ -1,9 +1,8 @@
 @import './app/assets/css/w3.css';
 @import './app/assets/css/blackPulseEffect.css';
-
+@import "./assets/css/bootstrap.min.css";
 
 html {
-	height: 100%;
 	width: 100%;
 }
 

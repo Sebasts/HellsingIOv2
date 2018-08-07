@@ -1,3 +1,22 @@
-<p>
-  blog works!
-</p>
+<div class="blogContainer">
+	<ul>
+		<li *ngFor="let blog of blogs">{{blog.id}}</li>
+	</ul>
+	Hello logss
+	<div class='blogBody' id="SITREP">
+		<h3>Who are we?</h3>
+		<router-outlet name="sub-home"></router-outlet>
+		Sebastian and Jessica Hellsing are the curators of Hellsing IO! We are
+		sailors, fishermen, hikers, inventors, travelers, and coders!
+	</div>
+	<div class='blogBody' id="mainHomeDiv">
+		<h3>Who are we?</h3>
+		Sebastian and Jessica Hellsing are the curators of Hellsing IO! We are
+		sailors, fishermen, hikers, inventors, travelers, and coders!
+	</div>
+	<div class='blogBody' id="mainHomeDiv">
+		<h3>Who are we?</h3>
+		Sebastian and Jessica Hellsing are the curators of Hellsing IO! We are
+		sailors, fishermen, hikers, inventors, travelers, and coders!
+	</div>
+</div>

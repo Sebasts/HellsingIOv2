@@ -1,3 +1,8 @@
 .appContainer {
-	background: white;
+	
+}
+
+.nav-clock {
+	position: fixed; width: 80vw;
+	background-color:white;
 }

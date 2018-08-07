@@ -1,15 +1,11 @@
-<div class="container-fluid homeContainer">
-	<div class="row">
-		<div class="sideBar col-sm-3">
-			Hello8
-			<div class="weatherContainer"><a routerLink="/home/blog">Weather</a></div>
-			<div class="currentEvents">H</div>
-			<div class="currentEvents">Exhibit</div>
-			<div class="stockTicker">Stocks</div>
-		</div>
-		<div class="content col-sm-7">
-		Hello 4
-		<router-outlet></router-outlet>
-		</div>
+<div class='homeContainer appBox'>
+	<h1 id='header home '>Welcome to Hellsing IO!</h1>
+	<div class="welcomeMessage">{{welcomeMessage}}</div>
+	<div class='pulseArrow' id="homeArrow ">
+		<img src='assets/pic/downArrow.png'>
 	</div>
+	<div class="mountainWindow"></div>
+	<router-outlet></router-outlet>
+
+	<div #bottom></div>
 </div>

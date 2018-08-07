@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Blog } from './blog';
+import { MockBlogs } from './mock-blogs';
 import { DataPathwayService } from './data-pathway.service';
 import { Observable, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
@@ -10,47 +11,43 @@ import { catchError, map, tap } from 'rxjs/operators';
     providedIn: 'root',
 } )
 export class BlogService {
-    private blogUrl = 'api/blogs'; 
-    
+
+    private blogUrl = 'http://localhost:8080/api/ping';
+
     constructor( private http: HttpClient,
         private dataPathway: DataPathwayService ) { }
 
     getBlogs(): Observable<Blog[]> {
-        this.dataPathway.add( "Fetched blog ddata" );
-
-        return this.http.get<Blog[]>(this.blogUrl)
-        .pipe(
-                tap(blogs => this.log('fetched blogs')),
-                catchError(this.handleError('getHeroes', []))
-                );
+        return of( MockBlogs );
     }
+
 
     getBlog( id: number ): Observable<Blog> {
         this.dataPathway.add( 'Fetched blog with id : ${id}' );
 
         return new Observable<Blog>();//this.http.get<Blog[]>(this.blogUrl);
     }
-    
-    private log(message: string) {
-        this.dataPathway.add(`HeroService: ${message}`);
-      }
+
+    private log( message: string ) {
+        this.dataPathway.add( `HeroService: ${message}` );
+    }
     /**
      * Handle Http operation that failed.
      * Let the app continue.
      * @param operation - name of the operation that failed
      * @param result - optional value to return as the observable result
      */
-    private handleError<T> (operation = 'operation', result?: T) {
-      return (error: any): Observable<T> => {
-     
-        // TODO: send the error to remote logging infrastructure
-        console.error(error); // log to console instead
-     
-        // TODO: better job of transforming error for user consumption
-        this.log(`${operation} failed: ${error.message}`);
-     
-        // Let the app keep running by returning an empty result.
-        return of(result as T);
-      };
+    private handleError<T>( operation = 'operation', result?: T ) {
+        return ( error: any ): Observable<T> => {
+
+            // TODO: send the error to remote logging infrastructure
+            console.error( error ); // log to console instead
+
+            // TODO: better job of transforming error for user consumption
+            this.log( `${operation} failed: ${error.message}` );
+
+            // Let the app keep running by returning an empty result.
+            return of( result as T );
+        };
     }
 }

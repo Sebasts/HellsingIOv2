@@ -1,5 +1,20 @@
 * {
-	background-color: grey;
-	height:2vh;
-	margin:0;
+	font-weight: 300;
+	/* background-image: url(motivator-background2.jpg); */
+	background-repeat: no-repeat; height: 2vh; margin: 0; color: #d98585;
+	line-height: 2vh; font-size: 15px; text-align: center;
+	font-family: 'Courgette', 'sans-serif';
+}
+
+.pulse-right {
+	animation: pulse-right 1.1s infinite;
+}
+
+.pulse-left {
+	animation: pulse-left 1.1s infinite;
+}
+
+.motoContainer {
+	border: 1px #dedbdb solid; border-radius: 5px;
+	box-shadow: 0px 0px 8px 1px white;
 }
