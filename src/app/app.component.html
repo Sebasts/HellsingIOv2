@@ -1,8 +1,10 @@
-<div class='appContainer container'>
-	<div class="nav-clock">
-		<app-clock></app-clock>
-	<app-nav></app-nav>
+<div class='appContainer row'>
+	<div class="col-sm-12">
+		<div class="nav-clock">
+			<app-clock></app-clock>
+			<app-nav></app-nav>
+		</div>
+		<router-outlet></router-outlet>
+		<app-data-pathway></app-data-pathway>
 	</div>
-	<router-outlet></router-outlet>
-	<app-data-pathway></app-data-pathway>
 </div>

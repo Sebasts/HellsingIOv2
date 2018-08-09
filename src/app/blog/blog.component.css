@@ -1,3 +1,16 @@
 .blogContainer {
 	margin-top: 30vh;
 }
+.authorPicContainer{
+	float:clear;
+}
+.authorHeads{
+	border: 1px black solid;
+	border-radius:50%;
+	height:50px;
+	width:50px;
+	float:left;
+}
+.blogAuthor{
+	clear:both;
+}

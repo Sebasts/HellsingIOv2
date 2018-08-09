@@ -2,8 +2,9 @@ export class Blog {
     id:Number;
     title:String;
     body:String;
-    imgLocation:String
+    image:String
     submitDate:Date;
     updateDate:Date;
-    authors:String[];
+    authors:string;
+    authorsImage:string[]
 }

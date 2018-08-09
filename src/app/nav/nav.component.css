@@ -1,19 +1,35 @@
 .navbar {
 	border-bottom: 1px grey solid; box-shadow: 0px 0px 9px 1px #888888;
+	
 }
 
 .navbar-brand {
 	border: 1px grey solid; 
 	border-radius: 15px;
-	width: 8vw;
+	width: 9vw;
 	text-align: center; 
-	box-shadow: 0px 0px 10px 1px #d6d3d3;
+    box-shadow: inset 0px 3px 1px #da8a8a;
+    font-family: 'Courgette', 'sans-serif';
 }
-
+#powered{
+	margin-top: 2%;
+    width: 29%;	
+}
+.nav-link{
+	color: #8a3b3b;
+    font-weight: bold;
+}
 .navbar-collapse {
-	margin-left: 32%;
 }
 
 a {
 	color: black;
+}
+.nav-item{
+	font-family: 'Courgette', 'sans-serif';
+	font-weight:500;
+	color:grey;
+	width:95%;
+    white-space: nowrap;
+    margin: 0px 5px 0px 5px;
 }

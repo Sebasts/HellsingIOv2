@@ -1,6 +1,15 @@
 <div class="blogContainer">
 	<ul>
-		<li *ngFor="let blog of blogs">{{blog.id}}</li>
+		<li *ngFor="let blog of blogs">
+			<ul class="authorPicContainer">
+				<li *ngFor="let pic of blog.authorsImage">
+					<img src="{{pic}}" class="authorHeads" />
+				</li>
+			</ul>
+			<div class="blogAuthor">{{blog.author}}</div>
+			<div class="blogTitle">{{blog.title}}</div>
+			<div class="blogBody">{{blog.body}}</div>
+		</li>
 	</ul>
 	Hello logss
 	<div class='blogBody' id="SITREP">

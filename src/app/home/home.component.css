@@ -1,37 +1,59 @@
-h1 {
+/* start of desktop styles */
+
+@media screen and (max-width: 991px) {
+     /* start of large tablet styles */
+
+}
+
+@media screen and (max-width: 767px) {
+     /* start of medium tablet styles */
+
+}
+
+@media screen and (max-width: 479px) {
+     /* start of phone styles */
+
+}
+
+h1 {	
+	position:relative;
     /* margin: auto; */
     height: 175px;
     /* position: fixed; */
     text-align: center;
     padding: 0;
     /* left: 40vw; */
-    margin-left: 6vw;
+    margin-left: -1vw;
 }
 .homeContainer{
 	background-color: white;
+	position:relative;
 }
 .homeContainer .blogBody {
-	width: 68vw;
 	border-left: 0 solid black;
 	/*horizontal vertical blur radius spread radius color*/
 	box-shadow: -2px 17px 3px 3px #888888;
 	border-radius: 5px;
 	min-height: 90vh;
-	margin-left:30vw;
 	position:fixed;
+}
+#welcome{
+	padding-top: 15vh;
+	
 }
 .welcomeMessage{
     font-family: 'Courgette', 'sans-serif';
-    margin-left: 23vw;
-    margin-top: -6vh;
+    text-align:center;
+    margin-top: 5vh;
     font-size: 25px;
     font-weight: lighter;
-    width: 39vw;
+    width:80%;
+    margin-left:8%;
 }
 .pulseArrow {
 	background: white;
 	z-index: 999;
-    margin-left: 38vw;
+    margin-left: 29vw;
     margin-top: 7vh;
     width: 100vw;
     /* position: fixed; */
@@ -39,15 +61,20 @@ h1 {
 .mountainWindow{
     border: 1px grey solid;
     height: 550px;
+    width:100%;
     /* margin-top: 0vh; */
     /* position: fixed; */
     /* display: block; */
-    width: 80vw;
+    max-width: 64.8vw;
     box-shadow: inset 0px 1px 5px grey;
     border-radius: 5px;
    	background-image:url('/assets/pic/mountain.jpg');
 	background-attachment: fixed;
-    background-position: -8vw -30vh;}
+    background-position: -8vw -30vh;
+    margin-left: 1.4%;
+    background-size: 120%;
+	
+    }
 .up{
 	animation: slideToTop 1.5s 1, pulse 2s infinite;
 	top:-6%
