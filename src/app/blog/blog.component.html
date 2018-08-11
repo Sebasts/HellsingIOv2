@@ -1,31 +1,20 @@
+<div class="blogSeperator sticky"></div>
+
 <div class="blogContainer">
 	<ul>
 		<li *ngFor="let blog of blogs">
 			<ul class="authorPicContainer">
-				<li *ngFor="let pic of blog.authorsImage">
-					<img src="{{pic}}" class="authorHeads" />
-				</li>
+				<li *ngFor="let pic of blog.authorsImage; let i = index"><img
+					src="{{pic}}" class="authorHeads" />
+					<div class="authorShadow{{i}}"></div></li>
 			</ul>
-			<div class="blogAuthor">{{blog.author}}</div>
+			<div class="blogAuthor">
+				<span class="authorTick">___________</span><span
+					class="authorContent">{{blog.authors}}</span>
+			</div>
+			<div style="clear: both">&nbsp;</div>
 			<div class="blogTitle">{{blog.title}}</div>
 			<div class="blogBody">{{blog.body}}</div>
 		</li>
 	</ul>
-	Hello logss
-	<div class='blogBody' id="SITREP">
-		<h3>Who are we?</h3>
-		<router-outlet name="sub-home"></router-outlet>
-		Sebastian and Jessica Hellsing are the curators of Hellsing IO! We are
-		sailors, fishermen, hikers, inventors, travelers, and coders!
-	</div>
-	<div class='blogBody' id="mainHomeDiv">
-		<h3>Who are we?</h3>
-		Sebastian and Jessica Hellsing are the curators of Hellsing IO! We are
-		sailors, fishermen, hikers, inventors, travelers, and coders!
-	</div>
-	<div class='blogBody' id="mainHomeDiv">
-		<h3>Who are we?</h3>
-		Sebastian and Jessica Hellsing are the curators of Hellsing IO! We are
-		sailors, fishermen, hikers, inventors, travelers, and coders!
-	</div>
 </div>

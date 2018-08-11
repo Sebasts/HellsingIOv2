@@ -1,22 +1,26 @@
 @import './app/assets/css/w3.css';
 @import './app/assets/css/blackPulseEffect.css';
 @import "./assets/css/bootstrap.min.css";
-*{
-	max-width:960px;
-	vertical-align: middle;
-	
-}
-html, body {
-    height: 100%;
-}
-
-html {
-    display: table;
-    margin: auto;
-}
-
 body {
+  padding-top: 54px;
 }
-ul{
-	list-style: none;
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
 }
