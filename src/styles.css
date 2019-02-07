@@ -4,8 +4,12 @@ html, body{
     left:0;
     width:100vw;
     height:100vh;
+
 }
 
+body{
+    position:fixed;
+}
 h1{
     font-size:6rem;
 }
