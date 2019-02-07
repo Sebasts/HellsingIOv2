@@ -9,15 +9,15 @@
   top: 0;
   left: 0;
   background-color: #111;
-  overflow-x: hidden;
+  overflow-x: hidden; 
   transition: 0.3s;
   margin-top: 10vh;
   padding-top: 60px;
-  box-shadow: 3 px 0px 10px #3b3b3b
+  box-shadow: 3px 0px 10px #3b3b3b
 }
 
 .sidenav.close {
-  height: 94vh;
+  height: 90vh;
   width: 0;
   position: fixed;
   z-index: 1;
@@ -26,7 +26,7 @@
   transition: 0.3s;
   background-color: #111;
   overflow-x: hidden;
-  margin-top: 6vh;
+  margin-top: 10vh;
   transition: 0.5s;
   padding-top: 60px;
 }

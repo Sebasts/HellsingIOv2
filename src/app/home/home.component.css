@@ -1,0 +1,27 @@
+.home-container {
+  width: 100vw;
+  height: 90vh;
+  text-align: center;
+}
+
+.keys-container {
+  width: 45vw;
+  height: 33vw;
+  text-align: center;
+  margin-left: 35vw;
+}
+
+.keys-container img {
+  border: 1px solid black;
+  border-radius: 5px;
+  animation-name: keyIllusion;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes keyIllusion {
+  0%   {  border: 1px solid black; }
+  50%  {  border: 20px solid black; }
+  100% {  border: 1px solid black; }
+}
+
