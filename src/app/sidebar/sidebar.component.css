@@ -1,19 +1,23 @@
 #sideNavMobile{
     display:none;
 }
+.left-sidebar-arrow{
+    display:none;
+}
 .sidenav.open {
-  height: 90vh;
-  width: 20vw;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden; 
-  transition: 0.3s;
-  margin-top: 10vh;
-  padding-top: 60px;
-  box-shadow: 3px 0px 10px #3b3b3b
+    height: 90vh;
+    width: 20vw;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.3s;
+    margin-top: 9.8vh;
+    padding-top: 60px;
+    box-shadow: 3px 7px 6px #3b3b3b;
+    z-index:1000;
 }
 
 .sidenav.close {
@@ -81,4 +85,7 @@
     transition: 0.5s;
     padding-top: 60px;
   }
+  .left-sidebar-arrow{
+    display:block;
+}
 }

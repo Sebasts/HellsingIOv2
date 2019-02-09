@@ -2,10 +2,16 @@
     min-height: 10vh;
     box-shadow: 0px 3px 3px #3b3b3b;
     border-bottom: 1px solid #302f2f;
+    position:fixed;
+    width:100vw;
+    z-index:999;
 }
 .navbar-collapse{
         padding-left: 55vw;
 }
 .navbar-brand{
     font-family: 'Pacifico', cursive;
+}
+.bg-dark{
+    background-color: #111111!important;
 }

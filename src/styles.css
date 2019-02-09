@@ -1,19 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
-html, body{
-    top:0;
-    left:0;
-    width:100vw;
-    height:100vh;
+
+html,
+body {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height:100vh; 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--gray);
+
 
 }
 
-body{
-    position:fixed;
+h1 {
+  font-size: 6rem;
 }
-h1{
-    font-size:6rem;
-}
-img{
-    height:100%;
-    width:100%;
+
+img {
+  height: 100%;
+  width: 100%;
 }

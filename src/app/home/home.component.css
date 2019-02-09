@@ -1,27 +1,123 @@
+#welcome {
+  border-bottom: 1px solid black;
+  margin-left: 42vw;
+  width: 31vw;
+  font-size: 2.5vw;
+  font-family: 'Ubuntu', sans-serif;
+  color: #322020;
+  box-shadow: 3px 1px 1px black;
+}
+
 .home-container {
   width: 100vw;
-  height: 90vh;
+  height: 100vw;
   text-align: center;
 }
 
 .keys-container {
-  width: 45vw;
-  height: 33vw;
+  border: 1px solid black;
+  width: 61vw;
+  height: 20vw;
   text-align: center;
-  margin-left: 35vw;
+  margin-left: 30vw;
+  background: black;
+  box-shadow: -5px 6px 13px black;
+  border-radius: 5px;
 }
 
 .keys-container img {
   border: 1px solid black;
   border-radius: 5px;
   animation-name: keyIllusion;
-  animation-duration: 8s;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  opacity: 0.5;
+}
+
+.mission-container {
+  height: stretch-content;
+  width: 100vw;
+  text-align: center;
+}
+
+.mission-gear {
+  background: url(/assets/pics/mission-gear.png);
+  margin-left: 56vw;
+  height: 100px;
+  width: 100px;
+  background-size: contain;
+  margin-top: 5vh;
+  position: absolute;
+  animation-name: spinning-gear;
+  animation-duration: .5s;
   animation-iteration-count: infinite;
 }
 
-@keyframes keyIllusion {
-  0%   {  border: 1px solid black; }
-  50%  {  border: 20px solid black; }
-  100% {  border: 1px solid black; }
+.mission-statement {
+  font-family: '8BITWONDERNominal';
+  margin-top: 10vh;
+  padding-top: 5vh;
+  height: 35vh;
+  text-align: center;
+  background: #171411;
+  width: 30vw;
+  border-radius: 15px;
+  padding: 2.5vw .2vw;
+  margin-left: 44vw;
+  border: 1px solid grey;
+  color: #827f7f;;
+  box-shadow: 0px 4px 14px 2px black;
+  -webkit-animation-name: mission-rock;
+  animation-name: mission-rock;
+  -webkit-animation-duration: 14s;
+  animation-duration: 14s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
+/* animations */
+
+@keyframes mission-rock {
+  12% {
+    transform: rotate(20deg);
+  }
+  20% {
+    transform: rotate(-20deg);
+  }
+  38% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  63% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(-20deg);
+  }
+  88% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
+@keyframes keyIllusion {
+  0% {
+    border: 0px solid black;
+  }
+  50% {
+    border: 20px solid black;
+  }
+  100% {
+    border: 0px solid black;
+  }
+}
+
+@keyframes spinning-gear {
+  50% {
+    transform: rotate(180deg);
+  }
+}
