@@ -4,7 +4,7 @@
     border-bottom: 1px solid #302f2f;
     position:fixed;
     width:100vw;
-    z-index:999;
+    z-index:2;
 }
 .navbar-collapse{
         padding-left: 55vw;

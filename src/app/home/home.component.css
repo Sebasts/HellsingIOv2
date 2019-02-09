@@ -1,4 +1,4 @@
-#welcome {
+.welcome {
   border-bottom: 1px solid black;
   margin-left: 42vw;
   width: 31vw;
@@ -9,8 +9,8 @@
 }
 
 .home-container {
-  width: 100vw;
-  height: 100vw;
+  width: 98vw;
+  height: 98vw;
   text-align: center;
 }
 
@@ -36,7 +36,7 @@
 
 .mission-container {
   height: stretch-content;
-  width: 100vw;
+  width: 98vw;
   text-align: center;
 }
 
@@ -65,7 +65,7 @@
   padding: 2.5vw .2vw;
   margin-left: 44vw;
   border: 1px solid grey;
-  color: #827f7f;;
+  color: #827f7f;
   box-shadow: 0px 4px 14px 2px black;
   -webkit-animation-name: mission-rock;
   animation-name: mission-rock;

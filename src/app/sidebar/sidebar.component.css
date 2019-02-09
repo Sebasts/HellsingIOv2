@@ -60,7 +60,7 @@
 @media screen and (max-height: 760px) {
   .sidenav.open {
     height: 94vh;
-    width: 100vw;
+    width: 98vw;
     position: fixed;
     z-index: 1;
     top: 0;

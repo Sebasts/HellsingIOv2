@@ -1,16 +1,18 @@
 <div id="mySidenav" class="sidenav {{sidebarPosition}}">
-  <a href="javascript:void(0)" class="closebtn" (click)="toggleNav()"><span class="left-sidebar-arrow">&#8668;</span></a>
-   <a href="#">Intro</a>
-  <a href="#">Sebastian Hellsing</a>
-  <a href="#">Professional Timeline</a>
-  <a href="#">Military Service</a> 
-  <a href="#">Download Resume</a>
-</div>
+  <button class="closebtn" (click)="toggleNav()">
+    <span class="left-sidebar-arrow">&#8668;</span>
+  </button>
+    <button (click)="scrollToElement('intro')">Intro</button>
+      <button (click)="scrollToElement('sebastian')">Sebastian Hellsing</button>
+        <button (click)="scrollToElement('resume')">Professional Timeline</button>
+          <button (click)="scrollToElement('military')" >Military Service</button> 
+  <a href="/docs/resume.pdf " download>Download Resume</a>
 <span style="font-size:30px;cursor:pointer" (click)="toggleNav()">&#8669;</span>
 <div id="sideNavMobile" class="sidenav {{sidebarPosition}}">
-  <a href="javascript:void(0)" class="closebtn" (click)="toggleNav()">&times;</a>
-  <a href="#">Sebastian Hellsing</a>
-  <a href="#">Professional Timeline</a>
-  <a href="#">Military Service</a>
-  <a href="#">Download Resume</a>
+  <button class="closebtn" (click)="toggleNav()">&times;</button>
+<button (click)="scrollToElement('intro')">Intro</button>
+      <button (click)="scrollToElement('sebastian')">Sebastian Hellsing</button>
+        <button (click)="scrollToElement('resume')">Professional Timeline</button>
+          <button (click)="scrollToElement('military')" >Military Service</button> 
+  <a href="/docs/resume.pdf " download>Download Resume</a>
 </div>

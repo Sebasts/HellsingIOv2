@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { $ } from 'protractor';
 
 @Component({
     selector: 'app-sidebar',
@@ -21,6 +20,10 @@ export class SidebarComponent implements OnInit {
         } else {
             this.sidebarPosition = 'open';
         }
+    }
+
+    public scrollToElement($element): void {
+         document.querySelector('#' + $element).scrollIntoView();
     }
 
 }
