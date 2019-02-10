@@ -23,15 +23,17 @@
   background: black;
   box-shadow: -5px 6px 13px black;
   border-radius: 5px;
+  margin-top:3vh;
 }
 
 .keys-container img {
+  margin-top: 3vh;
   border: 1px solid black;
   border-radius: 5px;
   animation-name: keyIllusion;
   animation-duration: 10s;
   animation-iteration-count: infinite;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .mission-container {
@@ -75,6 +77,36 @@
   animation-iteration-count: infinite;
 }
 
+.sebastian-home {
+  text-align: center;
+  margin-top: 15vh;
+  padding: 5px;
+  height: 50vh;
+  width: 52vw;
+  margin-left: 35vw;
+  border-radius: 10px;
+  border: 2px solid #ffbaff;
+  background-color: #9a579a;
+  box-shadow: inset 0px 0px 5px 5px #ca77ca;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 600;
+  color: #161111;
+  font-size: 1.1vw;
+}
+.skills-container{
+    font-size: 3vw;
+    box-shadow: inset 0px 0px 5px 5px black;
+    width: 8vw;
+    margin-left: 20vw;
+    background: silver;
+    padding: 1vh 0px;
+    position: absolute;
+
+}
+h6{
+    margin-left: -49vw;
+    font-weight: bold;
+}
 /* animations */
 
 @keyframes mission-rock {

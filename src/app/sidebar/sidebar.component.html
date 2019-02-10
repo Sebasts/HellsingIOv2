@@ -1,18 +1,28 @@
-<div id="mySidenav" class="sidenav {{sidebarPosition}}">
-  <button class="closebtn" (click)="toggleNav()">
-    <span class="left-sidebar-arrow">&#8668;</span>
-  </button>
-    <button (click)="scrollToElement('intro')">Intro</button>
-      <button (click)="scrollToElement('sebastian')">Sebastian Hellsing</button>
-        <button (click)="scrollToElement('resume')">Professional Timeline</button>
-          <button (click)="scrollToElement('military')" >Military Service</button> 
-  <a href="/docs/resume.pdf " download>Download Resume</a>
-<span style="font-size:30px;cursor:pointer" (click)="toggleNav()">&#8669;</span>
-<div id="sideNavMobile" class="sidenav {{sidebarPosition}}">
-  <button class="closebtn" (click)="toggleNav()">&times;</button>
-<button (click)="scrollToElement('intro')">Intro</button>
-      <button (click)="scrollToElement('sebastian')">Sebastian Hellsing</button>
-        <button (click)="scrollToElement('resume')">Professional Timeline</button>
-          <button (click)="scrollToElement('military')" >Military Service</button> 
-  <a href="/docs/resume.pdf " download>Download Resume</a>
+<div>
+  <span style="font-size:30px;cursor:pointer" (click)="toggleNav()">&#8669;</span>
 </div>
+<div class="sidenav {{sidebarPosition}}">
+  <a href="javascript:void(0)" class="closebtn" (click)="toggleNav()">
+    <span class="left-sidebar-arrow">&#8668;</span>
+  </a>
+  <button id="intro-button" (click)="scrollToElement('intro')">Intro</button>
+  <button id="sebastian-button" (click)="scrollToElement('sebastian')">Sebastian Hellsing</button>
+  <button id="timeline-button" (click)="scrollToElement('resume')">Professional Timeline</button>
+  <button id="military-button" (click)="scrollToElement('military')">Military Service</button>
+ 
+    <a  href="/docs/resume.pdf" download> <button >Download Resume</button></a>
+    <button  id="download-button"><a  href="/docs/resume.pdf" download></a></button>
+
+  <div id="sideNavMobile" class="sidenav {{sidebarPosition}}">
+    <a href="javascript:void(0)" class="closebtn" (click)="toggleNav()">
+      <span class="left-sidebar-arrow">&#8668;</span>
+    </a>
+    <button (click)="scrollToElement('intro')">Intro</button>
+    <button (click)="scrollToElement('sebastian')">Sebastian Hellsing</button>
+    <button (click)="scrollToElement('resume')">Professional Timeline</button>
+    <button (click)="scrollToElement('military')">Military Service</button>
+    <button>
+      <a href="/docs/resume.pdf" download>Download Resume</a>
+      <div class="download-icon"></div>
+    </button>
+  </div>

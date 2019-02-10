@@ -1,23 +1,26 @@
-#sideNavMobile{
-    display:none;
+#sideNavMobile {
+  display: none;
 }
-.left-sidebar-arrow{
-    display:none;
+
+.left-sidebar-arrow {
+  display: none;
 }
+
 .sidenav.open {
-    height: 90vh;
-    width: 20vw;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.3s;
-    margin-top: 9.8vh;
-    padding-top: 60px;
-    box-shadow: 3px 7px 6px #3b3b3b;
-    z-index:1000;
+  height: 90vh;
+  width: 20vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  text-align: center;
+  transition: 0.3s;
+  margin-top: 9.8vh;
+  padding-top: 60px;
+  box-shadow: 3px 7px 6px #3b3b3b;
+  z-index: 1000;
 }
 
 .sidenav.close {
@@ -36,7 +39,6 @@
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 1rem;
   font-weight: bolder;
@@ -55,6 +57,69 @@
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+button {
+  margin-left: 20%;
+  border-radius: 10px;
+  margin-top: 10%;
+  float: left;
+  clear: both;
+  display: inline-block;
+  font-weight: bolder;
+  background-color: #646464;
+  box-shadow: -2px 4px 5px -3px #7f6262;
+  border-color: #c9d824;
+}
+
+button:hover {
+  color: gold !important;
+  cursor: pointer;
+  background: black;
+  box-shadow: inset 0px 0px 5px 3px black;
+}
+
+#intro-button {
+  color: red;
+}
+
+#sebastian-button {
+  font-family: 'Ubuntu', sans-serif;
+  color: #a6a4a4;
+}
+
+#military-button {
+  background: linear-gradient(to right, red 0%, white, blue 100%) !important;
+}
+
+#timeline-button {
+  color: #020231;
+}
+
+#download-button {
+  background: url(/assets/pics/cloud-download.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  width: 2vw;
+  height: 2vh;
+  margin-top: 1vh;
+  margin-left: 7.6vw;
+  border: none;
+  box-shadow: none;
+}
+
+#download-button:hover {
+  cursor: pointer;
+    box-shadow:  0px 0px 5px 3px black;
+}
+
+.download-icon {
+  /* color:gold;
+    background-image:url('/assets/pics/cloud-download.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position-x:center; */
 }
 
 @media screen and (max-height: 760px) {
@@ -85,7 +150,7 @@
     transition: 0.5s;
     padding-top: 60px;
   }
-  .left-sidebar-arrow{
-    display:block;
-}
+  .left-sidebar-arrow {
+    display: block;
+  }
 }

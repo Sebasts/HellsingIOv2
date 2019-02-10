@@ -13,10 +13,13 @@
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/8bit-wonder" type="text/css" />
-  
+
   <!-- Bootstrap styles -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
+    
+  <!-- Dev icons -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
   <!-- jQuery, popper, boostrapjs-->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -29,6 +32,15 @@
 
 <body>
   <app-root></app-root>
+  <!-- fix for nav bar jumping on scroll-->
+  <script>
+    $(".nav").wrap('<div class="nav-placeholder"></div>');
+    $(".nav-placeholder").height(jQuery(".nav").outerHeight());
+
+
+    $(".nav").wrapInner('<div class="nav-inner"></div>');
+
+  </script>
 </body>
 
 </html>
