@@ -1,11 +1,14 @@
 .welcome {
-  border-bottom: 1px solid black;
-  margin-left: 42vw;
-  width: 31vw;
-  font-size: 2.5vw;
-  font-family: 'Ubuntu', sans-serif;
-  color: #322020;
-  box-shadow: 3px 1px 1px black;
+    border-bottom: 1px solid black;
+    text-align: center;
+    margin-left: 0vw;
+    padding-left: 16vw;
+    width: 100vw;
+    font-size: 2.5vw;
+    font-family: 'Ubuntu', sans-serif;
+    background: #4e404e;
+    color: #322020;
+    box-shadow: 3px 1px 1px black;
 }
 
 .home-container {
@@ -23,15 +26,14 @@
   background: black;
   box-shadow: -5px 6px 13px black;
   border-radius: 5px;
-  margin-top:3vh;
+  margin-top: 20vh;
 }
 
 .keys-container img {
-  margin-top: 3vh;
   border: 1px solid black;
   border-radius: 5px;
   animation-name: keyIllusion;
-  animation-duration: 10s;
+  animation-duration: 14s;
   animation-iteration-count: infinite;
   opacity: 1;
 }
@@ -81,7 +83,7 @@
   text-align: center;
   margin-top: 15vh;
   padding: 5px;
-  height: 50vh;
+  height: fit-content;
   width: 52vw;
   margin-left: 35vw;
   border-radius: 10px;
@@ -93,23 +95,45 @@
   color: #161111;
   font-size: 1.1vw;
 }
-.skills-container{
-    font-size: 3vw;
-    box-shadow: inset 0px 0px 5px 5px black;
-    width: 8vw;
-    margin-left: 20vw;
-    background: silver;
-    padding: 1vh 0px;
-    position: absolute;
 
+.skills-container {
+  font-size: 3vw;
+  box-shadow: inset 0px 0px 5px 5px black;
+  width: 8vw;
+  margin-left: 20vw;
+  background: silver;
+  padding: 1vh 0px;
+  position: absolute;
 }
-h6{
-    margin-left: -49vw;
-    font-weight: bold;
+
+h6 {
+  margin-left: -49vw;
+  font-weight: bold;
+  color:lavender;
 }
+
+.professional-timeline {
+    width: 75vw;
+    margin-left: 22vw;
+    margin-top: 10vh;
+    border: 4px solid #828863;
+    background: black;
+    box-shadow: inset 0px 0px 9px 2px gr
+}
+
+.professional-timeline span {
+  float: left;
+  clear: right;
+  background:silver;
+  width:contain;
+}
+
 /* animations */
 
 @keyframes mission-rock {
+  0% {
+    transform: rotate(-20deg);
+  }
   12% {
     transform: rotate(20deg);
   }
@@ -119,7 +143,7 @@ h6{
   38% {
     transform: rotate(20deg);
   }
-  50% {
+  48% {
     transform: rotate(-20deg);
   }
   63% {
@@ -128,7 +152,7 @@ h6{
   75% {
     transform: rotate(-20deg);
   }
-  88% {
+  86% {
     transform: rotate(20deg);
   }
   100% {
