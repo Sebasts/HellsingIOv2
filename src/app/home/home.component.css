@@ -1,14 +1,14 @@
 .welcome {
-    border-bottom: 1px solid black;
-    text-align: center;
-    margin-left: 0vw;
-    padding-left: 16vw;
-    width: 100vw;
-    font-size: 2.5vw;
-    font-family: 'Ubuntu', sans-serif;
-    background: #4e404e;
-    color: #322020;
-    box-shadow: 3px 1px 1px black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  margin-left: 0vw;
+  padding-left: 16vw;
+  width: 100vw;
+  font-size: 2.5vw;
+  font-family: 'Ubuntu', sans-serif;
+  background: #4e404e;
+  color: #322020;
+  box-shadow: 3px 1px 1px black;
 }
 
 .home-container {
@@ -105,27 +105,64 @@
   padding: 1vh 0px;
   position: absolute;
 }
-
+p{
+  margin-top: 0;
+  margin-bottom: 1rem;
+  background: burlywood;
+  border-bottom: 1px solid black;
+  box-shadow: 0px 1px 3px 3px grey;
+  width: 99%;
+  padding: 0px 5px;
+}
 h6 {
   margin-left: -49vw;
   font-weight: bold;
-  color:lavender;
+  color: lavender;
+}
+
+ul{
+        list-style: none;
+}
+
+li{
+    box-shadow: 2px 2px 5px 2px darkgrey;
 }
 
 .professional-timeline {
-    width: 75vw;
-    margin-left: 22vw;
-    margin-top: 10vh;
-    border: 4px solid #828863;
-    background: black;
-    box-shadow: inset 0px 0px 9px 2px gr
+  width: 75vw;
+  margin-left: 22vw;
+  margin-top: 10vh;
+  border: 4px solid #828863;
+  background: #fffde4;
+  box-shadow: inset 0px 0px 9px 2px grey;
+  padding-top: 1vh;
 }
 
 .professional-timeline span {
   float: left;
   clear: right;
-  background:silver;
-  width:contain;
+}
+
+.job-title {
+  font-weight: bold;
+  font-style: italic;
+  color: #b80844;
+  width: 100%;
+  border: 2px solid;
+  color: #b69898;
+}
+
+.organization{
+  font-weight: bold;
+  color: burlywood;
+  width: 100%;
+  font-style: italic;
+}
+.location{
+  font-weight: bold;
+  color: #484464;
+  width: 100%;
+  font-style: italic;
 }
 
 /* animations */
