@@ -1,0 +1,47 @@
+.navbar{
+    box-shadow: 1px 1px 10px 0px black;
+}
+.navbar-brand{
+    font-family: 'Pacifico', cursive;
+}
+.nav-link{
+    background: rgb(248, 249, 250);
+    border-radius: 5px;
+}
+.power-banner{
+    position: fixed;
+    font-size: 1em;
+    font-family: monospace;
+    font-weight: bold;
+    margin-left: 12%;
+    border: 1px solid #ffeeee;
+    box-shadow: -3px 4px 3px 1px darkgrey
+}
+.power-banner .angular-banner-logo{
+    height:2%;
+    width:8%;
+}
+.power-banner .bootstrap-banner-logo{
+    height:2%;
+    width:10%;
+}
+.banner-exclamation-mark{
+    display:inline-block;
+    transform:rotate(15deg);
+    font-weight:bold;
+
+    font-size:1.3em;
+}
+
+@media(max-width:765px){
+    .power-banner{
+        margin-left:0;
+      }
+      .nav-link {
+        color: rgba(0,0,0,.5);
+        padding: 5px 10px;
+        margin-top: 5px;
+        /* padding-left: 10px; */
+        /* padding-right: 10px; */
+    }
+}

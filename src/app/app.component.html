@@ -1,0 +1,24 @@
+<nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+  <a class="navbar-brand" href="#">HellsingIO</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+    <ul class="navbar-nav">
+        <li class="nav-items"><a class="nav-link"></a></li>
+      <li class="nav-items">
+        <button class="nav-link" [ngx-scroll-to]="'#intro'">Top</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" [ngx-scroll-to]="'#timeline'">Professional timeline</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" ><a  href="/assets/docs/SHellsing-resume.pdf" download>Download resume</a></button>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="col-xs-12 col-md-6 power-banner">Built with <img class="bootstrap-banner-logo" src="/assets/pics/bootstrap-logo.png"/>ootstrap and powered by <img class="angular-banner-logo" src="/assets/pics/angular-logo.png"/>ngular<span class="banner-exclamation-mark">!</span></div>
+
+<router-outlet></router-outlet>
+<app-footer></app-footer>
