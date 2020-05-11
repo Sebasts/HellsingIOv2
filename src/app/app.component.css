@@ -1,21 +1,28 @@
+nav{
+    background-color:#383838;
+}
 .navbar{
     box-shadow: 1px 1px 10px 0px black;
 }
 .navbar-brand{
-    font-family: 'Pacifico', cursive;
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Fondamento', cursive;
+    color:#000000;
+    text-shadow: 45px 15px 2px #585e65;
 }
 .nav-link{
-    background: rgb(248, 249, 250);
     border-radius: 5px;
 }
 .power-banner{
-    position: fixed;
     font-size: 1em;
     font-family: monospace;
+    background-color: gainsboro;
+    border-radius: 5px;
     font-weight: bold;
-    margin-left: 12%;
+    margin-left: -1.3vw;
+    margin-top: 6.4vh;
     border: 1px solid #ffeeee;
-    box-shadow: -3px 4px 3px 1px darkgrey
+    box-shadow: 1px 1px 3px 1px darkgrey;
 }
 .power-banner .angular-banner-logo{
     height:2%;
@@ -32,7 +39,31 @@
 
     font-size:1.3em;
 }
+.construction-text{
+    margin-top: 39vh;
+    /* margin-left: 50%; */
+    font-weight: 800;
+    color: white;
+    font-size: 5vw;
+}
 
+.gradient-text {
+    background-color: white;
+    
+    /* Create the gradient. */
+    background-image: linear-gradient(45deg, #000000, #f3ec78);
+    
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
 @media(max-width:765px){
     .power-banner{
         margin-left:0;
